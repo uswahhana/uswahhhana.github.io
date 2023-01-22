@@ -1,0 +1,112 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="w3.css">
+<img src="baner.jpg" width="100%" height="50%">
+
+
+<div class="w3-bar w3-teal">
+	<button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Apel')">Apel</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Jeruk')">Jeruk</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Ceri')">Ceri</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Anggur')">Anggur</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Kiwi')">Kiwi</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+	
+<!- Dropdown menu->
+	<div class="w3-dropdown-hover">
+		<button class="w3-button">Menu</button>
+		<div class="w3-dropdown-content w3-bar-block w3-card-4">
+		<button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Apel')">Apel</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Jeruk')">Jeruk</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Ceri')">Ceri</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Anggur')">Anggur</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Kiwi')">Kiwi</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+		</div>
+	</div>
+</div>
+
+<div id="Home" class="w3-container kota w3-animate-zoom w3-light-green" style="display:block">
+	<center>
+	<img src="welcome.jpg" width="50%" height="50%">
+</div>
+
+
+<div id="Profile" class="w3-container kota w3-animate-fading w3-black" style="display:none">
+	<center>
+	<hr>
+	<h2> MY PROFILE </h2>
+	<hr>
+	<img src="profile.jpg" width="50%">
+	<hr>
+	<P>	NAMA	: USWAHTUN HASANAH</p>	
+	<p>	NIM 	: 10122161</p>
+	<P>	KELAS 	: IF - 5</p>
+</div>
+
+<div id="Apel" class="w3-container kota w3-animate-left w3-light-green" style="display:none">
+	<center>
+	<hr>
+	<img src="apel.jpeg" width="25%" height="25%">
+	<hr>
+	<p>Kata apel berasal dari Inggris yaitu 'apple'. 
+	Apel adalah buah yang banyak dikonsumsi orang di seluruh dunia, 
+	bukan hanya untuk pencuci mulut tapi juga untuk menambah gizi pada tubuh. 
+	Apel merupakan tanaman buah tahunan yang berasal dari pengunungan Caucacus di Asia dan kemudian menyebar ke seluruh pelosok Asia.
+	</p>
+</div>
+
+<div id="Jeruk" class="w3-container kota w3-animate-top w3-light-green" style="display:none">
+	<center>
+	<hr>
+	<img src="jeruk.jpeg" width="25%" height="25%">
+	<hr>
+	<p>Buah Jeruk (Citrus sinensis Osbeck) adalah buah yang memiliki kulit berwarna hijau hingga jingga dan daging buahnya mengandung banyak air. 
+	Sari buah jeruk merupakan minuman hasil perasan jeruk yang populer. Pohon – pohon jeruk manis banyak tumbuh di iklim tropis dan subtropis.
+	</p>
+</div>
+
+<div id="Ceri" class="w3-container kota w3-animate-right w3-light-green" style="display:none">
+	<center>
+	<hr>
+	<img src="ceri.jpeg" width="25%" height="25%">
+	<hr>
+	<p>Buah cherry (ceri) merupakan bagian dari famili Rosaceae yang juga mencakup buah persik, plum, dan nektarin. 
+	Buah mungil berwarna merah menggoda ini sudah dinikmati sebagai salah satu sajian sehat sejak zaman bangsa Romawi kuno dulu. 
+	Buah ceri digolongkan menjadi 2 jenis, yaitu ceri manis dan ceri asam.
+	</p>
+</div>
+
+<div id="Anggur" class="w3-container kota w3-animate-bottom w3-light-green" style="display:none">
+	<center>
+	<hr>
+	<img src="anggur.jpeg" width="25%" height="25%">
+	<hr>
+	<p>Anggur merupakan tanaman buah berupa perdu merambat yang termasuk ke dalam keluarga Vitaceae. 
+	Buah ini biasanya digunakan untuk membuat jus anggur, jelly, minuman anggur, minyak biji anggur dan kismis, atau dimakan langsung.
+	</p>
+</div>
+
+<div id="Kiwi" class="w3-container kota w3-animate-opacity w3-light-green" style="display:none">
+	<center>
+	<hr>
+	<img src="kiwi.jpeg" width="25%" height="25%">
+	<hr>
+	<p>Kiwi adalah buah kecil yang berbentuk sawo. 
+	Selain memiliki rasa yang enak, buah kiwi memiliki banyak manfaat untuk kesehatan. 
+	Daging buahnya berwarna hijau, memiliki rasa yang manis serta kaya akan nutrisi seperti vitamin C, vitamin K, vitamin E, asam folat dan kalium.
+	</p>
+</div>
+
+
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
